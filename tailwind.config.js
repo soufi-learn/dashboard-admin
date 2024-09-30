@@ -11,10 +11,12 @@ export default {
           light: "#2E2B4A",
         },
 
+        secondary: "#1BA9E9",
+
         light: {
-          main: "#f0f4ff", // Normal color
-          lighter: "#f7faff ", // Light variant
-          darker: "#d9e6ff ", // Dark variant
+          main: "#f0f4ff",
+          lighter: "#f7faff ",
+          darker: "#d9e6ff ",
         },
 
         dark: {
@@ -23,11 +25,10 @@ export default {
           darker: "#1A182D",
         },
 
-
         // Background colors for light and dark modes
         background: {
-          light: "#f0f4ff", // White background for light mode
-          dark: "#221F3A", // Dark background for dark mode
+          light: "#f0f4ff",
+          dark: "#221F3A",
         },
       },
     },
