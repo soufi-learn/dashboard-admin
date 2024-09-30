@@ -9,4 +9,5 @@ const routes = [
   { path: "/newUser", element: <NewUser /> },
   { path: "/products", element: <Products /> },
 ];
+
 export default routes;
