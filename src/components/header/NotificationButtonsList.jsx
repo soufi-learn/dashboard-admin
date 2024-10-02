@@ -7,7 +7,7 @@ const NotificationButtonsList = [
   {
     id: 1,
     label: 85,
-    color: "EC5B59",
+    color: "#EC5B59",
     icon: <IoSettingsOutline size="1.3rem" />,
   },
   {
