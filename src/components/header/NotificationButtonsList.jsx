@@ -6,25 +6,25 @@ import { TfiGift } from "react-icons/tfi";
 const NotificationButtonsList = [
   {
     id: 1,
-    label: 85,
+    label: "۸۵",
     color: "#ff0088",
     icon: <IoSettingsOutline size="1.3rem" />,
   },
   {
     id: 2,
-    label: 85,
+    label: "۳۱",
     color: "#0057C8",
     icon: <TfiGift size="1.3rem" />,
   },
   {
     id: 3,
-    label: 18,
+    label: "۱۸",
     color: "#827DD3",
     icon: <RiMessage3Line size="1.3rem" />,
   },
   {
     id: 4,
-    label: 12,
+    label: "۱۲",
     color: "#33b183",
     icon: <TbBellRinging size="1.3rem" />,
   },

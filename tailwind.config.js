@@ -4,6 +4,13 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        "dana-black": "dana-black",
+        "dana-bold": "dana-bold",
+        "dana-medium": "dana-medium",
+        "dana-light": "dana-light",
+      },
+
       colors: {
         primary: {
           main: "#221F3A",
