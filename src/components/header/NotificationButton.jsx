@@ -5,7 +5,7 @@ const NotificationButton = ({ label, color, icon }) => {
       {icon}
       <span
         style={{ backgroundColor: color }}
-        className={`text-sm pt-1 font-dana-bold absolute rounded-full flex items-center justify-center text-white min-w-6 h-6 -top-3 -right-3`}
+        className={`text-sm pt-1 font-dana-medium absolute rounded-full flex items-center justify-center text-white min-w-6 h-6 -top-3 -right-3`}
       >
         {label}
       </span>
