@@ -4,7 +4,9 @@ import { HiHome } from "react-icons/hi2";
 
 const SidebarList = () => {
   const [sidebarItems, setSidebarItems] = useState([
-    { id: 1, label: "داشبورد", icon: <HiHome /> },
+    { id: 1, label: "داشبورد", icon: <HiHome />, href: "/" },
+    { id: 2, label: "لیست سفارشات", icon: <HiHome />, href: "/orders" },
+    { id: 3, label: "مشتریان", icon: <HiHome />, href: "/customers" },
   ]);
 
   return (

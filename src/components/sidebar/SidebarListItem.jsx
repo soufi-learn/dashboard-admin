@@ -2,10 +2,16 @@ import { NavLink } from "react-router-dom";
 
 const SidebarListItem = ({ item }) => {
   return (
-    <li key={item.id} className="">
+    <li key={item.id}>
       <NavLink
-        to="/"
-        className="flex items-center gap-2 bg-secondary-main/25 py-3 px-4 rounded-lg after:content-[''] after:absolute relative after:bg-secondary-main after:w-1 after:h-4/6 after:top-1/2 after:-right-[1.5px] after:transform after:-translate-y-1/2 after:rounded-md text-secondary-dark dark:text-[#7ed6ff] transition-all"
+        to={item.href}
+        className={({ isActive }) =>
+          `flex items-center gap-2 py-3 px-4 rounded-lg relative transition-all mb-2 text-secondary-dark dark:text-secondary-light ${
+            isActive
+              ? "bg-secondary-main/20  dark:text-[#7ed6ff] after:content-[''] after:absolute after:bg-secondary-main after:w-1 after:h-4/6 after:top-1/2 after:-right-[1.5px] after:transform after:-translate-y-1/2 after:rounded-md"
+              : ""
+          }`
+        }
       >
         {item.icon} {item.label}
       </NavLink>
