@@ -8,7 +8,7 @@
   }
 
   body {
-    font-family: "dana-light", "sans-serif";
+    font-family: "dana-medium", "sans-serif";
   }
 
   /* Add dana font */
@@ -65,19 +65,21 @@
   }
 }
 
-.gradient-backline::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 2px;
-  z-index: 2;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) 0%,
-    rgb(157, 157, 157) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
+@layer components {
+  .gradient-backline::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 2px;
+    z-index: 2;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgb(157, 157, 157) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
 }

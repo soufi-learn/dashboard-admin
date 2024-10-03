@@ -34,7 +34,7 @@ const DarkLightButton = () => {
         >
           <FiSun />
         </span>
-        <div className="z-10 flex items-center justify-center w-8 h-8 text-white duration-300 transform -translate-x-[.5rem] rounded-full bg-secondary  dark:translate-x-[2.4rem] transition-transform"></div>
+        <div className="z-10 flex items-center justify-center w-8 h-8 text-white duration-300 transform -translate-x-[.5rem] rounded-full bg-secondary-main  dark:translate-x-[2.4rem] transition-transform"></div>
       </div>
     </div>
   );
