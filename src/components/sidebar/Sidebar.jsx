@@ -11,7 +11,7 @@ const Sidebar = () => {
             className="relative z-20 w-1/2 mx-auto rounded-full"
           />
         </div>
-        <h3 className="mb-2 text-center text-secondary-main">
+        <h3 className="mb-2 text-center text-secondary-main dark:text-secondary-light">
           تحسین صوفی زاده
         </h3>
         <p className="text-center font-dana-medium">برنامه نویس فرانت اند</p>
