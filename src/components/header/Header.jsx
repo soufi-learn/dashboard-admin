@@ -13,19 +13,20 @@ const Header = () => {
   return (
     <header>
       <div className="flex items-center justify-between">
-        <Button className="rounded bg-primary-main md:hidden p-2 hover:bg-primary-light text-sm text-white active:bg-primary-main dark:bg-light-main dark:text-dark-darker dark:hover:bg-light-darker dark:active:bg-light-main">
+        <Button className="rounded bg-primary-main md:hidden p-2 hover:bg-primary-light text-sm text-white active:bg-primary-main dark:bg-light-main dark:text-dark-darker dark:hover:bg-light-darker dark:active:bg-light-main realtive z-30">
           <HiMiniBars3BottomRight size="1.6rem" />
         </Button>
 
         <DarkLightButton />
 
-        <div className="flex items-center gap-7 fixed bg-slate-900/80 backdrop-blur-sm w-full h-screen top-0 right-0 z-20 md:static md:w-auto md:h-auto md:bg-transparent md:backdrop-blur-0">
+        <div className="flex items-center justify-center flex-col gap-7 fixed bg-slate-900/80 backdrop-blur-sm w-full h-screen top-0 right-0 z-20 md:static md:w-auto md:h-auto md:bg-transparent md:backdrop-blur-0">
           {notificationsList.map((notification) => (
             <NotificationButton
               key={notification.id}
               label={notification.label}
               color={notification.color}
               icon={notification.icon}
+              value={notification.value}
             />
           ))}
         </div>
