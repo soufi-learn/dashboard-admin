@@ -19,7 +19,7 @@ const Header = () => {
 
         <DarkLightButton />
 
-        <div className="flex items-center gap-7">
+        <div className="flex items-center gap-7 fixed bg-slate-900/80 backdrop-blur-sm w-full h-screen top-0 right-0 z-20 md:static md:w-auto md:h-auto md:bg-transparent md:backdrop-blur-0">
           {notificationsList.map((notification) => (
             <NotificationButton
               key={notification.id}

@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="flex items-start gap-6 p-6 pb-5">
       <Sidebar />
-      <div className="w-full md:w-4/5">
+      <div className="w-full lg:w-4/5">
         <Header />
         {router}
       </div>
