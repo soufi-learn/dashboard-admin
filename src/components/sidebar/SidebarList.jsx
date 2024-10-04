@@ -29,7 +29,7 @@ const SidebarList = () => {
   ]);
 
   return (
-    <ul>
+    <ul className=" overflow-auto max-h-[420px] sidebar-scroll">
       {sidebarItems.map((item) => (
         <SidebarListItem key={item.id} item={item} />
       ))}

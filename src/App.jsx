@@ -6,7 +6,7 @@ import Sidebar from "./components/sidebar/Sidebar";
 function App() {
   const router = useRoutes(routes);
   return (
-    <div className="flex gap-6 p-6">
+    <div className="flex gap-6 p-6 pb-5">
       <Sidebar />
       <div className="w-4/5 ">
         <Header />
