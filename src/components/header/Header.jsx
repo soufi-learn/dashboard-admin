@@ -29,8 +29,8 @@ const Header = () => {
         <DarkLightButton />
 
         <div
-          className={`flex items-center justify-center flex-col md:flex-row gap-7 transition-all duration-300  fixed bg-slate-900/80 backdrop-blur-sm right-0 md:scale-100 w-full h-screen top-0 ${
-            openMenu ? " scale-100" : " scale-0"
+          className={`flex items-center justify-center flex-col md:flex-row gap-7 transition-all duration-300  fixed bg-slate-900/80 backdrop-blur-sm right-0 md:rotate-0 md:scale-100 w-full h-screen top-0 ${
+            openMenu ? "scale-100 rotate-0" : "rotate-90 scale-0"
           } z-20 md:static md:w-auto md:h-auto md:bg-transparent md:backdrop-blur-0`}
         >
           {notificationsList.map((notification) => (

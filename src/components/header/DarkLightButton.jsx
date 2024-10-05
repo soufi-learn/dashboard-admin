@@ -15,7 +15,7 @@ const DarkLightButton = () => {
   }, [darkMode]);
 
   return (
-    <div className="flex items-center space-x-2">
+    <div className="flex items-center space-x-2 relative z-30">
       <div
         onClick={() => setDarkMode(!darkMode)}
         className="flex items-center w-[5.5rem] h-10 p-1 rounded-full cursor-pointer dark:bg-dark-lighter bg-light-darker transition-all"
