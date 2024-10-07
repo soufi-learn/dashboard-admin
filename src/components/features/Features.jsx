@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FeatureItem from "./Featureitem";
+import FeatureItem from "./FeatureItem";
 
 const Features = () => {
   const [featuresList, setFeaturesList] = useState([
