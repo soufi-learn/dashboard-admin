@@ -1,5 +1,4 @@
 const NotificationButton = ({ label, color, icon, value }) => {
-  console.log(color);
   return (
     <div className="relative w-4/5 md:inline-block p-3 transition-all rounded-md shadow-sm cursor-pointer bg-light-darker dark:bg-primary-main md:dark:bg-primary-dark text-dark-main dark:text-light-main hover:bg-light-lighter dark:hover:bg-dark-lighter flex gap-3">
       {icon}

@@ -2,8 +2,10 @@ import Features from "../../components/features/Features";
 
 const Home = () => {
   return (
-    <div className="mt-10 dark:text-light-main transition-all">
-      <h3 className="mb-4">داشبورد</h3>
+    <div className="mt-10">
+      <h2 className="mb-6 text-dark-main dark:text-white transition-all">
+        داشبورد
+      </h2>
       <Features />
     </div>
   );
