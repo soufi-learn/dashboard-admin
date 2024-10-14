@@ -1,24 +1,82 @@
+// src/MyChart.jsx
+import React from "react";
 import {
-  ResponsiveContainer,
-  LineChart,
-  Line,
-  XAxis,
-  CartesianGrid,
+  Chart as ChartJS,
+  Title,
   Tooltip,
-} from "recharts";
+  Legend,
+  LineElement,
+  PointElement,
+  LinearScale,
+  CategoryScale, // Import the CategoryScale
+  ArcElement,
+} from "chart.js";
+import { Line } from "react-chartjs-2";
+import { chartData } from "../../data/ChartData";
 
-const Chart = ({ title, data, dataKey, grid }) => {
+// Register the necessary components including CategoryScale
+ChartJS.register(
+  Title,
+  Tooltip,
+  Legend,
+  LineElement,
+  PointElement,
+  LinearScale,
+  CategoryScale, // Register the CategoryScale here
+  ArcElement
+);
+
+const Chart = () => {
+  const options = {
+    layout: {
+      padding: 20,
+    },
+    plugins: {
+      legend: {
+        rtl: true,
+        position: "top",
+        labels: {
+          textAlign: "right",
+          font: {
+            family: "'dana-medium', Courier, monospace",
+            size: 14,
+          },
+        },
+      },
+      tooltip: {
+        rtl: true,
+        titleFont: {
+          family: "'dana-medium', cursive, sans-serif",
+        },
+        bodyFont: {
+          family: "'dana-medium', cursive, sans-serif",
+        },
+      },
+    },
+    scales: {
+      x: {
+        reverse: true,
+        ticks: {
+          font: {
+            family: "'dana-medium', Times, serif",
+            size: 12,
+          },
+        },
+      },
+      y: {
+        position: "right",
+        ticks: {
+          font: {
+            family: "'dana-medium', sans-serif",
+            size: 12,
+          },
+        },
+      },
+    },
+  };
   return (
     <div className="mt-10">
-      <h3 className="mb-5">{title}</h3>
-      <ResponsiveContainer width="100%" aspect={4}>
-        <LineChart data={data}>
-          <XAxis dataKey="name" stroke="#5550bd" />
-          <Line dataKey={dataKey} stroke="#5550bd" />
-          <Tooltip />
-          {grid && <CartesianGrid stroke="#30dfdf" strokeDasharray="10" />}
-        </LineChart>
-      </ResponsiveContainer>
+      <Line data={chartData} options={options} />
     </div>
   );
 };
