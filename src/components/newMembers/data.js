@@ -7,7 +7,7 @@ const newMembers = [
   },
   {
     id: 2,
-    name: "سهیل منصوری",
+    name: "احمد جلیلی",
     job: "برنامه نویس مرن استک",
     img: "images/profile.png",
   },
@@ -19,7 +19,7 @@ const newMembers = [
   },
   {
     id: 4,
-    name: "مهدی شکاری",
+    name: "اشکان هاشملو",
     job: "ادیتور ویدیو",
     img: "images/profile.png",
   },

@@ -1,7 +1,7 @@
 import { FaEye } from "react-icons/fa";
 import newMembers from "./data";
 
-const SmallWidget = () => {
+const NewMembers = () => {
   return (
     <div className="mt-10">
       <h3 className="mb-6 transition-all text-dark-darker dark:text-white">
@@ -27,4 +27,4 @@ const SmallWidget = () => {
   );
 };
 
-export default SmallWidget;
+export default NewMembers;
