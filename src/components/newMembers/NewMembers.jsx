@@ -10,7 +10,10 @@ const NewMembers = () => {
       <ul>
         {newMembers.map((member) => {
           return (
-            <li className="flex items-center justify-between gap-4 p-3 mb-4 bg-white rounded-md shadow-md">
+            <li
+              key={member.id}
+              className="flex items-center justify-between gap-4 p-3 mb-4 bg-white rounded-md shadow-md"
+            >
               <img src={member.img} alt="image" className="w-16 rounded-full" />
               <div className="flex flex-col flex-1 gap-1 transition-all text-dark-darker dark:text-white">
                 <span>{member.name}</span>

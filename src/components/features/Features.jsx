@@ -8,7 +8,7 @@ const Features = () => {
     { id: 3, title: "هزینه ها", price: "۱۵,۲۰۰,۰۰۰", profit: "۳۴.۲ -" },
   ]);
   return (
-    <div className="flex gap-4">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
       {featuresList.map((feature) => (
         <FeatureItem key={feature.id} feature={feature} />
       ))}
