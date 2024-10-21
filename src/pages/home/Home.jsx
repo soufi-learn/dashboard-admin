@@ -1,5 +1,6 @@
 import Chart from "../../components/chart/Chart";
 import Features from "../../components/features/Features";
+import SmallWidget from "../../components/smallWidget/SmallWidget";
 const Home = () => {
   return (
     <div className="mt-20">
@@ -7,6 +8,7 @@ const Home = () => {
       <h2 className="mb-6 text-white pt-7">داشبورد</h2>
       <Features />
       <Chart />
+      <SmallWidget />
     </div>
   );
 };
