@@ -13,7 +13,7 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <header className="fixed pl-8 right-0 w-full pr-[21%] top-0 py-6  pt-8 bg-light-main transition-all  dark:bg-primary-main">
+    <header className="fixed pl-8 pr-8 right-0 w-full lg:pr-[22%] top-0 py-6  pt-8 bg-light-main transition-all  dark:bg-primary-main">
       <div className="flex items-center justify-between">
         <Button
           className="z-30 p-2 text-sm text-white rounded bg-primary-main md:hidden hover:bg-primary-light active:bg-primary-main dark:bg-light-main dark:text-dark-darker dark:hover:bg-light-darker dark:active:bg-light-main realtive"

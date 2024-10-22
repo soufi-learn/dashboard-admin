@@ -1,5 +1,6 @@
 import Chart from "../../components/chart/Chart";
 import Features from "../../components/features/Features";
+import LastMembers from "../../components/lastMembers/LastMembers";
 import NewMembers from "../../components/newMembers/NewMembers";
 const Home = () => {
   return (
@@ -8,7 +9,10 @@ const Home = () => {
       <h2 className="mb-6 text-white pt-7">داشبورد</h2>
       <Features />
       <Chart />
-      <NewMembers />
+      <div className="flex gap-5 mt-10">
+        <NewMembers />
+        <LastMembers />
+      </div>
     </div>
   );
 };
