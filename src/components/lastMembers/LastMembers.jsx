@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const LastMembers = () => {
-  // تابع برای گرفتن کلاس بر اساس وضعیت
   const getButtonColor = (status) => {
     switch (status) {
       case "approve":
@@ -14,6 +13,7 @@ const LastMembers = () => {
         return "bg-gray-200 text-gray-700 hover:bg-gray-300 hover:text-gray-900 transition-all";
     }
   };
+
   const getButtonText = (status) => {
     switch (status) {
       case "approve":
@@ -21,8 +21,6 @@ const LastMembers = () => {
       case "decline":
         return "رد شد";
       case "pending":
-        return "در انتظار";
-      default:
         return "نامعلوم";
     }
   };
@@ -57,6 +55,22 @@ const LastMembers = () => {
             <td className="p-2 text-center border">۲,۴۸۰,۰۰۰ تومان</td>
             <td className="p-2 text-center border">
               <Button type="approve" />
+            </td>
+          </tr>
+          <tr>
+            <td className="p-2 text-center border">تحسین صوفی زاده</td>
+            <td className="p-2 text-center border">۱۳۸۱/۰۹/۲۲</td>
+            <td className="p-2 text-center border">۲,۴۸۰,۰۰۰ تومان</td>
+            <td className="p-2 text-center border">
+              <Button type="decline" />
+            </td>
+          </tr>
+          <tr>
+            <td className="p-2 text-center border">تحسین صوفی زاده</td>
+            <td className="p-2 text-center border">۱۳۸۱/۰۹/۲۲</td>
+            <td className="p-2 text-center border">۲,۴۸۰,۰۰۰ تومان</td>
+            <td className="p-2 text-center border">
+              <Button type="pending" />
             </td>
           </tr>
         </tbody>

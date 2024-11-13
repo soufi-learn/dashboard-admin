@@ -9,7 +9,7 @@ const Home = () => {
       <h2 className="mb-6 text-white pt-7">داشبورد</h2>
       <Features />
       <Chart />
-      <div className="flex gap-5 mt-10">
+      <div className="flex flex-col flex-wrap gap-5 mt-10 lg:flex-row">
         <NewMembers />
         <LastMembers />
       </div>
