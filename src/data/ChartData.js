@@ -1,4 +1,3 @@
-
 const chartData = {
   labels: [
     "فروردین",

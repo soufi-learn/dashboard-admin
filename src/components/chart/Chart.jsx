@@ -6,7 +6,7 @@ import { registerChartComponents } from "../../config/RegisterChartComponents";
 
 registerChartComponents();
 
-const Chart = () => {
+const Chart = ({ title }) => {
   // Add the monotonic options inside the dataset
   const updatedChartData = {
     ...chartData,
@@ -20,7 +20,7 @@ const Chart = () => {
   return (
     <div className="mt-10">
       <h3 className="transition-all text-dark-darker dark:text-white">
-        فروش ماهانه
+        {title}
       </h3>
       <Line data={updatedChartData} options={chartOptions} />
     </div>
