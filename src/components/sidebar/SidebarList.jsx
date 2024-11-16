@@ -4,7 +4,7 @@ import { HiHome } from "react-icons/hi2";
 import { IoAnalyticsOutline } from "react-icons/io5";
 import { MdOutlineAirlineStops } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa6";
-
+import { AiTwotoneShop } from "react-icons/ai";
 const SidebarList = () => {
   const [sidebarItems, setSidebarItems] = useState([
     { id: 1, label: "داشبورد", icon: <HiHome />, href: "/" },
@@ -25,6 +25,12 @@ const SidebarList = () => {
       label: "کاربران",
       icon: <FaRegUser />,
       href: "/users",
+    },
+    {
+      id: 5,
+      label: "محصولات",
+      icon: <AiTwotoneShop />,
+      href: "/products",
     },
   ]);
 

@@ -11,13 +11,6 @@ const Users = () => {
 
   return (
     <div className="mt-20">
-      <table className="table-fixed">
-        <thead>
-          <tr></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-
       <div className="relative overflow-x-auto">
         <table className="w-full text-sm text-left text-gray-500 rtl:text-right dark:text-gray-400">
           <thead className="uppercase transition-all text-dark-darker bg-light-darker dark:bg-dark-darker dark:text-light-darker">
